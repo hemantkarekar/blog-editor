@@ -1,0 +1,115 @@
+main.index {
+  section {
+    &.intro-video {
+      width: 100%;
+      background-color: white;
+      .content-wrap {
+        padding: 5% 5% 10% 5%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        .section {
+          width: 30%;
+          &.media-content {
+            position: relative;
+            width: 30%;
+            .video-mask {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(0, 0, 0, 0.7);
+              display: flex;
+              align-items: center;
+              video {
+                  width: 100%;
+                  aspect-ratio: 1.8;
+                  object-fit: cover;
+              }
+            }
+            .video-overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+            }
+          }
+          &.text-content {
+            width: 30%;
+            .welcome{
+                .text-wrap {
+                    * {
+                      color: white;
+                    }
+                    .desc {
+                        height: 300px;
+                        overflow-y: scroll;
+                      p {
+                        padding: 10px 0;
+                        font-weight: 300;
+                      }
+                    }
+                  }
+            }
+            .links{
+                .text-wrap {
+                    display: flex;
+                    flex-direction: column;
+                    * {
+                      color: white;
+                    }
+                    .link{
+                        padding: 10px 0;
+                        .title{
+                            p{
+                                font-weight: 600;
+                            }
+                        }
+                        .desc{
+                            p{
+                                font-weight: 300;
+                                font-size: smaller;
+                                opacity: 0.7;
+                            }
+                            a{
+                                font-size: smaller;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                  }
+            }
+          }
+        }
+      }
+    }
+    &.about {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      padding-bottom: 100px;
+      .content-wrap {
+        width: 75%;
+        margin-top: -100px;
+        background-color: #126ba4;
+        padding: 5%;
+        .text-wrap {
+            *{
+                color: white;
+            }
+            .desc{
+                p{
+                    font-weight: 300;
+                }
+            }
+        }
+      }
+    }
+  }
+}

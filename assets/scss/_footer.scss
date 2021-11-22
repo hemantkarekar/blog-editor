@@ -1,0 +1,36 @@
+footer{
+    background-color: #213165;
+
+    *{
+        color: white;
+    }
+    p{
+        text-transform: uppercase;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    section.footer-wrap{
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        .section{
+            .text-wrap{
+                .title{
+                    p{
+                    }
+                }
+                .desc{
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}
